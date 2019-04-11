@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<!-- saved from url=(0042)https://trello.com/b/uMaX4QIo/taking-notes -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="description" content="Organize anything, together. Trello is a collaboration tool that organizes your projects into boards. In one glance, know what&#39;s being worked on, who&#39;s working on what, and where something is in a process.">
+  <meta name="viewport" content="maximum-scale=1.0,width=device-width,initial-scale=1.0,user-scalable=0">
+  <meta name="apple-itunes-app" content="app-id=461504587, app-argument=https://trello.com/">
+  <meta name="slack-app-id" content="A074YH40Z">
+  <meta name="robots" content="noarchive">
+  <meta name="referrer" content="origin-when-cross-origin">
+  <title>* Taking Notes | Trello</title>
+  <script type="text/javascript" src="./_ Build Wireframe on Taking Notes _ Trello_files/5d4c84b635"></script><script src="./_ Build Wireframe on Taking Notes _ Trello_files/nr-spa-1044.min.js.download"></script><script src="./_ Build Wireframe on Taking Notes _ Trello_files/cb=gapi.loaded_0" async=""></script><script async="" src="./_ Build Wireframe on Taking Notes _ Trello_files/gtm.js.download"></script><script async="" src="./_ Build Wireframe on Taking Notes _ Trello_files/analytics.js.download"></script><script>var _failed=function(a){a=a.src||a.href;var b=function(a){if(a=/^https?:\/\/[^\/]+/.exec(a))return a[0]},b=b(a)||b(location.href)||"unknown";ga('send','event','Load Failure',b,a)};</script>
+  <!-- New Relic, loaded first and not bundled with anything else for great Apdex justice -->
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/newrelic.32b039151d1d8997eaa7.js.download" crossorigin="anonymous" onerror="_failed(this)"></script>
+  <script>
+    !function(e){var t={};function r(n){if(t[n])return t[n].exports;var a=t[n]={i:n,l:!1,exports:{}};return e[n].call(a.exports,a,a.exports,r),a.l=!0,a.exports}r.m=e,r.c=t,r.d=function(e,t,n){r.o(e,t)||Object.defineProperty(e,t,{configurable:!1,enumerable:!0,get:n})},r.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return r.d(t,"a",t),t},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r.p="https://a.trellocdn.com/prgb/dist/",r(r.s="hXt6")}({hXt6:function(e,t,r){"use strict";function n(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}function a(e,t,r){return t in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r,e}Object.defineProperty(t,"__esModule",{value:!0}),r.d(t,"PerfKeys",function(){return o});var o={NAVIGATION:"startup:navigation",NAVIGATION_TLS:"startup:navigation-tls",NAVIGATION_TTFB:"startup:navigation-ttfb",HTML:"startup:html",TIME_TO_INTERACTIVE:"startup:time-to-interactive",LOAD_TO_INTERACTIVE:"startup:page-load-to-interactive",APP:"startup:app.js",APP_DOWNLOAD:"download:app.js",LTP:"startup:ltp.js",LTP_DOWNLOAD:"download:ltp.js",QL_MEMBER_HEADER:"quickload:memberHeader",QL_MEMBER_BOARDS:"quickload:memberBoards",QL_MEMBER_QUICK_BOARDS:"quickload:memberQuickBoards",QL_SEARCH:"quickload:quickBoardSearch",QL_BOARD_MIN:"quickload:currentBoardMinimal",QL_BOARD_SECONDARY:"quickload:currentBoardSecondary",QL_BOARD_PLUGINS:"quickload:currentBoardPluginData",QL_CARD:"quickload:card",QL_ORGS:"quickload:organizationBoardsPage",BOOTSTRAP_HOME_VIEW:"bootstrap:member-home-view",BOOTSTRAP_SUPERHOME_VIEW:"bootstrap:member-super-home-view",BOOTSTRAP_CARD_VIEW:"bootstrap:card-view",BOOTSTRAP_BOARD_VIEW:"bootstrap:boards-view"},i="performance"in window,c=function(e){},s=Object.keys(o).map(function(e){return o[e]}),u=window.newrelic,p="requestIdleCallback"in window?window.requestIdleCallback:setTimeout,l=function(){function e(){var t=this;!function(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}(this,e),a(this,"startupReported",!1),a(this,"Keys",o),a(this,"startMeasurement",i?function(e){if(-1!==s.indexOf(e))try{window.performance.mark("".concat(e,"-start"))}catch(e){}}:c),a(this,"stopMeasurement",i?function(e){if(-1!==s.indexOf(e))try{window.performance.mark("".concat(e,"-end")),window.performance.measure(e,"".concat(e,"-start"),"".concat(e,"-end"));var r=window.performance.getEntriesByName(e)[0];t.reportMetrics([{name:e,totalTime:r.duration}])}catch(e){}}:c)}var t,r,l;return t=e,(r=[{key:"reportMetrics",value:function(e){p(function(){u&&e.forEach(function(e){var t=e.name,r=e.totalTime,n=u.interaction();n.setName(t),n.setAttribute("totalTime",r),n.save(),n.end()})})}},{key:"reportStartupMetrics",value:function(){if(!this.startupReported){try{performance.mark("done"),window.performance.measure(o.LOAD_TO_INTERACTIVE,"startup:html-start","done");var e=window.performance.getEntriesByType("navigation")[0],t=window.performance.getEntriesByType("resource").filter(function(e){return"script"===e.initiatorType&&e.name.includes("ltp")})[0],r=window.performance.getEntriesByType("resource").filter(function(e){return"script"===e.initiatorType&&e.name.includes("app")})[0],n=window.performance.getEntriesByName(o.LOAD_TO_INTERACTIVE)[0],a=window.performance.getEntriesByName("done")[0];this.reportMetrics([{name:o.NAVIGATION,totalTime:e.responseEnd-e.fetchStart},{name:o.NAVIGATION_TLS,totalTime:e.secureConnectionStart>0?e.connectEnd-e.secureConnectionStart:0},{name:o.NAVIGATION_TTFB,totalTime:e.responseStart-e.requestStart},{name:o.TIME_TO_INTERACTIVE,totalTime:n.duration},{name:o.LOAD_TO_INTERACTIVE,totalTime:a.startTime-e.startTime},{name:o.LTP_DOWNLOAD,totalTime:t.responseEnd-t.responseStart},{name:o.APP_DOWNLOAD,totalTime:r.responseEnd-r.responseStart}])}catch(e){}this.startupReported=!0}}}])&&n(t.prototype,r),l&&n(t,l),e}();window.TrelloPerf=window.TrelloPerf?window.TrelloPerf:new l,t.default=window.TrelloPerf}});
+//# sourceMappingURL=perf.97b777e57409254ebeee.js.map
+    TrelloPerf.startMeasurement(TrelloPerf.Keys.HTML);
+  </script>
+  <!-- Google Analytics, load failure tracking, and data load kickoff -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var page = location.pathname;
+    if(page === "/") page = "/boards";
+    ga('create', 'UA-53826304-2', {
+      cookieDomain: 'trello.com',
+      sampleRate: 1
+    });
+    var versionComponents = 'build-2087'.split('-');
+    ga('set', 'dimension1', versionComponents[0]);
+    ga('set', 'dimension2', versionComponents[1]);
+    ga('send', 'pageview', page);
+    
+    (function(i,c,e){if(!i[e]){i.GlobalSnowplowNamespace=i.GlobalSnowplowNamespace||[];
+    i.GlobalSnowplowNamespace.push(e);i[e]=function(){
+      var r=arguments;
+      var defer = i['requestIdleCallback'] ? i.requestIdleCallback : i.setTimeout;
+      defer(function(){
+        (i[e].q=i[e].q||[]).push(r)
+      });
+    };i[e].q=i[e].q||[];}}(window,document,"sp"));
+  </script>
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/snowplow.9afd656679e62eb7733f.js.download" async="" crossorigin="anonymous" onerror="_failed(this)"></script>
+  
+  <script type="text/javascript">
+  window.dataLayer=window.dataLayer||[];
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl+ '&gtm_auth=chlg06CfblVj204fihGEqA&gtm_preview=env-8&gtm_cookies_win=x';f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJ8M5SK');
+  </script>
+  
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/quickload.37ecd330bd7c9ee68c24.js.download" crossorigin="anonymous" onerror="_failed(this)"></script>
+  <script type="text/javascript">
+    window.clientVersion = 'build-2087';
+    window.slackTrelloDomain = 'https://slack-chat.trello.services';
+    window.slackDomain = 'https://slack.com/oauth/authorize';
+    window.trelloForWebsites = 'https://p.trellocdn.com';
+    window.customFieldsId = '56d5e249a98895a9797bebb9';
+    window.firstPartyPluginsOrg = '5a999cd36066c584c097f193';
+
+    window.attachmentsDomain = "https://trello-attachments.s3.amazonaws.com";
+    window.avatarDomain = "https://trello-avatars.s3.amazonaws.com";
+    window.backgroundDomain = "https://trello-backgrounds.s3.amazonaws.com";
+    window.logoDomain = "https://trello-logos.s3.amazonaws.com";
+
+    window.oneDriveClientId = 'f7936f71-2186-4c33-8553-134e287aefdf';
+    window.googleDriveClientId = '28300235456-b801aqbc1i8luet9arr7sgll09t6eep9.apps.googleusercontent.com';
+    window.dropboxClientAppKey = '36ipz29apw2svq8';
+    window.boxClientId = 'zclwcvudmddhz0cscz3w6awtcfs8bne3';
+    window.braintreeClientToken = 'production_xv5hxtpx_p8hfn7hqkwk46fwb';
+
+    window.snowplowCloudfrontServer = 'c.trello.com';
+    window.analyticsWebClientEnv = 'PROD';
+    window.launchdarklyKey = '58f55132f1e0bb0cb6b2829e';
+    window.appcuesAccountId = '26999';
+  </script>
+  <script>
+    window.locale = 'en-US';
+  </script>
+
+  
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/manifest.d18ab72d6729e2f662b9.js.download" crossorigin="anonymous" onerror="_failed(this)"></script>
+  <script>TrelloPerf.startMeasurement(TrelloPerf.Keys.LTP);</script>
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/ltp.75484322eefbef47dba9.js.download" crossorigin="anonymous" onerror="_failed(this)"></script><style data-styled-components=""></style>
+  <script>TrelloPerf.stopMeasurement(TrelloPerf.Keys.LTP);</script>
+  
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/locale.en-US.9cbceb90b978b772b1c9.js.download" crossorigin="anonymous" onerror="_failed(this)"></script>
+  <script>TrelloPerf.startMeasurement(TrelloPerf.Keys.APP);</script>
+  <script src="./_ Build Wireframe on Taking Notes _ Trello_files/app.826a855d7ef2df72dd63.js.download" crossorigin="anonymous" onerror="_failed(this)"></script><style type="text/css">.feedback-link__feedbackLink__2ky-v {
+  color: #17394D;
+  align-items: center;
+  border-radius: 4px;
+  bottom: 24px;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  padding: 3px 8px 3px 3px;
+  right: 24px;
+  text-decoration: none;
+}
+.feedback-link__icon__3DONp {
+  font-size: 16px !important;
+  margin-right: 4px;
+}
+.feedback-link__standard__cxcAn {
+  border: 1px solid #E2E4E6;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+.feedback-link__standard__cxcAn:hover {
+  color: #17394D;
+  background-color: #EDEFF0;
+}
+.feedback-link__standard__cxcAn:active {
+  color: #17394D;
+  background-color: #D6DADC;
+}
+.feedback-link__floating__2Rfc9 {
+  background-color: #A86CC1;
+  box-shadow: 0 1px 3px 0 rgba(235, 90, 70, 0.16);
+  color: white;
+  height: 22px;
+  padding: 5px 11px;
+  position: fixed;
+  z-index: 4;
+}
+@media only screen and (max-width: 711px) {
+  .feedback-link__floating__2Rfc9 {
+    display: none;
+  }
+}
+.feedback-link__floating__2Rfc9 .feedback-link__icon__3DONp {
+  color: white;
+}
+.feedback-link__floating__2Rfc9:hover {
+  background-color: #89609E;
+  color: white;
+}
+.feedback-link__floating__2Rfc9:active {
+  background-color: #6C547B;
+  color: white;
+}
+.feedback-link__floating__2Rfc9:focus {
+  border: 2px solid #5BA4CF;
+  color: white;
+  padding: 3px 9px;
+}
+</style><style type="text/css">.feature-feedback-link__m-badge-toggle-default__3PkAr {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.feature-feedback-link__m-badge-toggle-off-idle__2sEmD {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.feature-feedback-link__m-badge-toggle-off-hover__37IEL {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.feature-feedback-link__m-badge-toggle-off-active__1uzJV {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.feature-feedback-link__m-badge-toggle-on-idle__2Q3bW {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.feature-feedback-link__m-badge-toggle-on-hover__2ZgPE {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.feature-feedback-link__m-badge-toggle-on-active__1jqOl {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.feature-feedback-link__m-button-no-style__22jQF {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.feature-feedback-link__m-button-no-style__22jQF,
+.feature-feedback-link__m-button-no-style__22jQF:hover,
+.feature-feedback-link__m-button-no-style__22jQF:active,
+.feature-feedback-link__m-button-no-style__22jQF:focus {
+  background: none;
+}
+.feature-feedback-link__feedbackContainer__DXykH {
+  background-color: #FAF3C0;
+  border-radius: 4px;
+  display: flex;
+  color: #17394D;
+  margin-bottom: 16px;
+  padding: 8px;
+}
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__feedbackLink__34Voi {
+  color: #17394D;
+}
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__feedbackLink__34Voi:hover {
+  color: #111;
+}
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__dismissButtonIcon__1wRFp {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__dismissButtonIcon__1wRFp,
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__dismissButtonIcon__1wRFp:hover,
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__dismissButtonIcon__1wRFp:active,
+.feature-feedback-link__feedbackContainer__DXykH .feature-feedback-link__dismissButtonIcon__1wRFp:focus {
+  background: none;
+}
+</style><style type="text/css">.section-header__m-badge-toggle-default__3X6fh {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.section-header__m-badge-toggle-off-idle__2RghK {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.section-header__m-badge-toggle-off-hover__132tJ {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.section-header__m-badge-toggle-off-active__12owY {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.section-header__m-badge-toggle-on-idle__3OrE9 {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.section-header__m-badge-toggle-on-hover__2z7-8 {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.section-header__m-badge-toggle-on-active__3RqQZ {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.section-header__m-button-no-style__3prYt {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.section-header__m-button-no-style__3prYt,
+.section-header__m-button-no-style__3prYt:hover,
+.section-header__m-button-no-style__3prYt:active,
+.section-header__m-button-no-style__3prYt:focus {
+  background: none;
+}
+.section-header__header__2Z6-2 {
+  align-items: baseline;
+  display: flex;
+  height: 32px;
+  justify-content: flex-start;
+  margin-bottom: 8px;
+  padding: 0 0 0 8px;
+}
+.section-header__noMargin__1knk4 {
+  margin: 0;
+}
+.section-header__text__1SpVs {
+  color: #6B808C;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin-top: 16px;
+  text-transform: uppercase;
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 8px 0;
+}
+.section-header__icon__2h8hP {
+  flex: 0 0 auto;
+  margin-left: -8px;
+  position: relative;
+  text-align: center;
+  top: 1px;
+  width: 32px;
+}
+.section-header__button__1bPgl {
+  align-items: center;
+  background-color: #E2E4E6;
+  background-image: none !important;
+  border-radius: 16px;
+  box-shadow: 0 1px 0 0 #C4C9CC;
+  color: #333333;
+  display: flex;
+  font-size: 12px;
+  font-weight: normal;
+  height: 32px;
+  justify-content: center;
+  margin: 0 0 0 8px;
+  padding: 0 16px;
+  text-decoration: none;
+}
+.section-header__button__1bPgl:focus {
+  background-color: #E2E4E6;
+}
+.section-header__button__1bPgl:hover {
+  background-color: #D6DADC;
+  color: #333333;
+}
+.section-header__button__1bPgl:active {
+  background-color: #C4C9CC;
+  box-shadow: 0 1px 0 0 #A5ACB0;
+}
+.section-header__buttonIcon__wDL1A {
+  color: #838C91;
+  margin-left: -6px;
+}
+.section-header__buttonIconSpan__1_a9F {
+  color: currentcolor !important;
+}
+.section-header__buttonText__3Ctjy {
+  margin: 0 4px;
+}
+.section-header__fixedButton__1OgPW {
+  display: flex;
+  height: 0;
+  justify-content: center;
+  left: 0;
+  opacity: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 408px;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+  transition: 200ms opacity, 200ms -webkit-transform;
+  transition: 200ms transform, 200ms opacity;
+  transition: 200ms transform, 200ms opacity, 200ms -webkit-transform;
+  width: 100%;
+  z-index: 1;
+}
+.section-header__fixedButton__1OgPW .section-header__button__1bPgl {
+  background-color: #61BD4F;
+  box-shadow: 0 1px 0 0 #519839, 0 2px 2px 0 rgba(51, 51, 51, 0.3);
+  color: white;
+  margin: 0;
+}
+.section-header__fixedButton__1OgPW .section-header__button__1bPgl:hover {
+  color: white;
+  background-color: #5AAC44;
+}
+.section-header__fixedButton__1OgPW .section-header__button__1bPgl:active {
+  background-color: #519839;
+  box-shadow: 0 1px 0 0 #49852E, 0 2px 2px 0 rgba(51, 51, 51, 0.3);
+}
+.section-header__fixedButton__1OgPW .section-header__buttonIcon__wDL1A {
+  color: white;
+}
+.section-header__slideEnter__2vk2N,
+.section-header__slideExitActive__1KuEZ {
+  opacity: 0;
+  -webkit-transform: translateY(-424px);
+          transform: translateY(-424px);
+}
+.section-header__slideEnterActive__3sU8Z {
+  opacity: 1;
+  -webkit-transform: translateY(-400px);
+          transform: translateY(-400px);
+}
+</style><style type="text/css">.tab__m-badge-toggle-default__M0Ay0 {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.tab__m-badge-toggle-off-idle__33h51 {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tab__m-badge-toggle-off-hover__1eQZN {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tab__m-badge-toggle-off-active__3cEq- {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.tab__m-badge-toggle-on-idle__2Rzoq {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tab__m-badge-toggle-on-hover__1Fs1K {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tab__m-badge-toggle-on-active__1eTz2 {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.tab__m-button-no-style__MUSIE {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.tab__m-button-no-style__MUSIE,
+.tab__m-button-no-style__MUSIE:hover,
+.tab__m-button-no-style__MUSIE:active,
+.tab__m-button-no-style__MUSIE:focus {
+  background: none;
+}
+.tab__tabSection__1qSDc + .tab__tabSection__1qSDc {
+  margin-top: 8px;
+}
+.tab__tabList__3G31t:last-child {
+  margin-bottom: 12px;
+}
+.tab__tab__15G2j {
+  margin-bottom: 4px;
+}
+.tab__tabIcon__32Nvj {
+  display: block;
+  flex: 0 0 auto;
+  text-align: center;
+  width: 32px;
+  color: #798D99;
+}
+.tab__tabIconSpan__jlnEo {
+  color: currentcolor !important;
+}
+.tab__tabLogo__vPHtR {
+  display: block;
+  flex: 0 0 auto;
+  margin: 0 8px;
+}
+.tab__tabText__212hs {
+  flex: 1 1 auto;
+}
+.tab__tabLink__3C9rw,
+.tab__tabButton__37WIj {
+  align-items: center;
+  background-color: transparent;
+  border-radius: 4px;
+  box-shadow: none;
+  display: flex;
+  font-weight: bold;
+  margin: 0;
+  min-height: 20px;
+  overflow: hidden;
+  padding: 6px 8px 6px 0;
+  text-decoration: none;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+}
+.tab__tabLink__3C9rw:hover,
+.tab__tabButton__37WIj:hover {
+  background-color: rgba(9, 45, 66, 0.13);
+}
+.tab__tabLink__3C9rw:active,
+.tab__tabButton__37WIj:active {
+  background-color: rgba(9, 45, 66, 0.25);
+}
+.tab__tabButton__37WIj {
+  cursor: pointer;
+  font-weight: normal;
+  text-align: left;
+  width: 100%;
+}
+.tab__tabButton__37WIj,
+.tab__tabButton__37WIj:hover,
+.tab__tabButton__37WIj:active,
+.tab__tabButton__37WIj:focus {
+  box-shadow: none;
+  color: #6B808C;
+}
+.tab__tabButton__37WIj:hover,
+.tab__tabButton__37WIj:active,
+.tab__tabButton__37WIj:focus {
+  color: #17394D;
+}
+.tab__small__3c22X {
+  font-size: 12px;
+}
+.tab__tabListIndent__2EVi- {
+  color: #838C91;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 4px;
+  padding-left: 28px;
+}
+ul li:first-of-type a.tab__tabListIndent__2EVi- {
+  margin-top: 8px;
+}
+ul li:last-of-type a.tab__tabListIndent__2EVi- {
+  margin-bottom: 16px;
+}
+.tab__selected__1gsiC.tab__tabLink__3C9rw,
+.tab__selected__1gsiC.tab__tabButton__37WIj {
+  background-color: #E4F0F6;
+}
+.tab__selected__1gsiC.tab__tabLink__3C9rw .tab__tabIcon__32Nvj,
+.tab__selected__1gsiC.tab__tabButton__37WIj .tab__tabIcon__32Nvj {
+  color: #0079BF;
+}
+.tab__tabRightChild__29on4 {
+  margin-left: auto;
+}
+</style><style type="text/css">.navigation__externalLink__3B4mB .navigation__externalIcon__3QWSf {
+  width: 0;
+  height: 18px;
+  opacity: 0;
+  transition-duration: .15s;
+  transition-property: opacity, width, margin;
+}
+.navigation__externalLink__3B4mB:hover .navigation__externalIcon__3QWSf {
+  opacity: .75;
+  width: 18px;
+  margin-right: 6px;
+}
+</style><style type="text/css">.orientation-card__m-badge-toggle-default__3DPOf {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.orientation-card__m-badge-toggle-off-idle__iivBy {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.orientation-card__m-badge-toggle-off-hover__sYOxr {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.orientation-card__m-badge-toggle-off-active__86WLK {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.orientation-card__m-badge-toggle-on-idle__1BjyM {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.orientation-card__m-badge-toggle-on-hover__qBzt7 {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.orientation-card__m-badge-toggle-on-active__185FD {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.orientation-card__m-button-no-style__19i6Q {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.orientation-card__m-button-no-style__19i6Q,
+.orientation-card__m-button-no-style__19i6Q:hover,
+.orientation-card__m-button-no-style__19i6Q:active,
+.orientation-card__m-button-no-style__19i6Q:focus {
+  background: none;
+}
+.orientation-card__orientationCard__35K3Q {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(9, 45, 66, 0.25), 0 0 0 1px rgba(9, 45, 66, 0.08);
+  display: flex;
+  margin-bottom: 16px;
+  position: relative;
+  width: 100%;
+}
+.orientation-card__orientationCardBackgroundTop__2iWUQ {
+  flex-direction: column;
+}
+.orientation-card__orientationCardBackgroundTop__2iWUQ span {
+  text-align: center;
+}
+.orientation-card__background__3-Q7m {
+  background-color: #FBEDEB;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 4px 0 0 4px;
+  flex: 0 0 auto;
+  min-height: 130px;
+  width: 88px;
+}
+.orientation-card__backgroundTop__1gBW4 {
+  border-radius: 4px 4px 0 0;
+  min-height: 100px;
+  width: 100%;
+}
+.orientation-card__infoContainer__2lmIm {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 16px;
+  width: 100%;
+}
+.orientation-card__textCenter__3UvT9 {
+  text-align: center;
+}
+.orientation-card__title__1myxb {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.orientation-card__title__1myxb.orientation-card__textCenter__3UvT9 {
+  padding-bottom: 8px;
+}
+.orientation-card__text__21sdQ {
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 10px 0;
+}
+.orientation-card__text__21sdQ.orientation-card__textCenter__3UvT9 {
+  padding-bottom: 6px;
+}
+.orientation-card__dismissButtonIcon__3FJfN {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-weight: 400;
+  position: absolute;
+  margin-top: 8px;
+  right: 8px;
+}
+.orientation-card__dismissButtonIcon__3FJfN:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(9, 45, 66, 0.13);
+}
+.orientation-card__dismissButtonIcon__3FJfN:active {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(9, 45, 66, 0.25);
+}
+.orientation-card__dismissButton__hx47H {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  font-weight: 400;
+  cursor: pointer;
+  color: #6B808C;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 4px 0 0 0;
+  text-decoration: underline;
+}
+.orientation-card__dismissButton__hx47H:hover {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(9, 45, 66, 0.13);
+  color: #17394D;
+}
+.orientation-card__dismissButton__hx47H:active {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  background-color: rgba(9, 45, 66, 0.25);
+  color: #17394D;
+}
+.orientation-card__dismissButtonBackgroundTop__2zU0P {
+  margin-top: 12px;
+  text-align: center;
+}
+.orientation-card__backgroundName-new-user__3HwfR {
+  background-color: #F7F0FA;
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/new-user.c95fada45e5b8a72f20d.svg);
+  height: 136px;
+}
+.orientation-card__backgroundName-no-content__p56Lt {
+  background-color: #FDF5EC;
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/no-content.e25c676458c1f4cb280b.svg);
+  height: 108px;
+}
+.orientation-card__backgroundName-up-next__rWRoK {
+  background-color: #FDF5EC;
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/up-next.6b180fd2d4526f7925c9.svg);
+}
+.orientation-card__backgroundName-highlight__2kUWD {
+  background-color: #FEF2F9;
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/highlights.2bc06dddced721a031de.svg);
+}
+.orientation-card__backgroundName-feedback__2chuy {
+  background-color: #FEF2F9;
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/home/orientation/feedback.f60abbf7cb5745c0b532.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+input[type="text"].orientation-card__createBoardInput__3IVvF {
+  width: 100%;
+}
+.orientation-card__createBoardButton__1zcAX {
+  margin-top: 0;
+  width: 100%;
+}
+</style><style type="text/css">.snackbar__m-badge-toggle-default__3uMFy {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.snackbar__m-badge-toggle-off-idle__2FJWJ {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.snackbar__m-badge-toggle-off-hover__1k42_ {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.snackbar__m-badge-toggle-off-active__2uoXp {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.snackbar__m-badge-toggle-on-idle__1YmgM {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.snackbar__m-badge-toggle-on-hover__MHtPN {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.snackbar__m-badge-toggle-on-active__7rNnC {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.snackbar__m-button-no-style__G7sjj {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.snackbar__m-button-no-style__G7sjj,
+.snackbar__m-button-no-style__G7sjj:hover,
+.snackbar__m-button-no-style__G7sjj:active,
+.snackbar__m-button-no-style__G7sjj:focus {
+  background: none;
+}
+.snackbar__snackbarStackingContext__3FZRx {
+  position: relative;
+  z-index: 10;
+}
+.snackbar__snackbar__2BMKG {
+  align-items: center;
+  background-color: #333333;
+  border-radius: 4px;
+  bottom: 16px;
+  box-sizing: border-box;
+  display: flex;
+  font-size: 14px;
+  height: 48px;
+  left: 16px;
+  opacity: 1;
+  padding: 8px;
+  position: fixed;
+  -webkit-transform-origin: 50% 80%;
+          transform-origin: 50% 80%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  transition: 0.2s opacity, 0.2s -webkit-transform;
+  transition: 0.2s opacity, 0.2s transform;
+  transition: 0.2s opacity, 0.2s transform, 0.2s -webkit-transform;
+  width: 290px;
+}
+@media only screen and (max-width: 711px) {
+  .snackbar__snackbar__2BMKG {
+    left: calc(50% - 216px);
+    width: 432px;
+  }
+}
+@media only screen and (max-width: 464px) {
+  .snackbar__snackbar__2BMKG {
+    left: 16px;
+    right: 16px;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1092px) {
+  .snackbar__snackbar__2BMKG {
+    left: calc(50% - 216px);
+    margin-left: -14px;
+    width: 432px;
+  }
+}
+.snackbar__pinnedBoardsMenu__Yd-aj {
+  left: 16px;
+  margin-left: 0;
+  right: auto;
+  width: 290px;
+}
+@media only screen and (min-width: 1372px) {
+  .snackbar__pinnedBoardsMenu__Yd-aj {
+    left: calc(50% - 216px);
+    margin-left: 126px;
+    width: 432px;
+  }
+}
+.snackbar__fadeEnter__29r_- {
+  opacity: 0;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+  z-index: 2;
+}
+.snackbar__fadeEnterActive__3A4au {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 2;
+}
+.snackbar__fadeExit__1OR8k {
+  opacity: 0;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+  z-index: 1;
+}
+.snackbar__fadeExitActive__2CtlR {
+  opacity: 0;
+  -webkit-transform: scale(0.93);
+          transform: scale(0.93);
+  z-index: 1;
+}
+.snackbar__snackbar__2BMKG:not(:first-child).snackbar__fadeEnter__29r_-,
+.snackbar__snackbar__2BMKG:not(:last-child).snackbar__fadeEnter__29r_-,
+.snackbar__snackbar__2BMKG:not(:first-child).snackbar__fadeEnterActive__3A4au,
+.snackbar__snackbar__2BMKG:not(:last-child).snackbar__fadeEnterActive__3A4au {
+  transition: 0.3s opacity ease, 0.3s -webkit-transform cubic-bezier(0.8, 0, 0.75, 0.95);
+  transition: 0.3s transform cubic-bezier(0.8, 0, 0.75, 0.95), 0.3s opacity ease;
+  transition: 0.3s transform cubic-bezier(0.8, 0, 0.75, 0.95), 0.3s opacity ease, 0.3s -webkit-transform cubic-bezier(0.8, 0, 0.75, 0.95);
+}
+.snackbar__snackbar__2BMKG:not(:first-child).snackbar__fadeExit__1OR8k,
+.snackbar__snackbar__2BMKG:not(:last-child).snackbar__fadeExit__1OR8k,
+.snackbar__snackbar__2BMKG:not(:first-child).snackbar__fadeExitActive__2CtlR,
+.snackbar__snackbar__2BMKG:not(:last-child).snackbar__fadeExitActive__2CtlR {
+  transition: 0.3s opacity cubic-bezier(0.8, 0, 0.75, 0.95), 0.3s -webkit-transform ease;
+  transition: 0.3s transform ease, 0.3s opacity cubic-bezier(0.8, 0, 0.75, 0.95);
+  transition: 0.3s transform ease, 0.3s opacity cubic-bezier(0.8, 0, 0.75, 0.95), 0.3s -webkit-transform ease;
+}
+.snackbar__message__rllAe {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #EDEFF0;
+  flex: 1 1 auto;
+  margin: 0 0 0 8px;
+}
+.snackbar__message__rllAe a:link,
+.snackbar__message__rllAe a:visited {
+  color: #B6BBBF;
+}
+.snackbar__message__rllAe a:hover {
+  color: #CDD2D4;
+}
+.snackbar__message__rllAe a:active {
+  color: #D6DADC;
+}
+.snackbar__button__1MTDS {
+  background: none;
+  border-radius: 4px;
+  box-shadow: none;
+  flex: 0 0 auto;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+}
+.snackbar__button__1MTDS:hover {
+  background: #222222;
+}
+.snackbar__button__1MTDS:active {
+  background: #000000;
+}
+.snackbar__button__1MTDS:focus {
+  background-image: none;
+}
+.snackbar__actionButton__1srmV {
+  background: none;
+  border-radius: 4px;
+  box-shadow: none;
+  flex: 0 0 auto;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  color: #5BA4CF;
+  font-weight: bold;
+  margin: 0 0 0 8px;
+  padding: 0 8px;
+}
+.snackbar__actionButton__1srmV:hover {
+  background: #222222;
+}
+.snackbar__actionButton__1srmV:active {
+  background: #000000;
+}
+.snackbar__actionButton__1srmV:focus {
+  background-image: none;
+}
+.snackbar__actionButton__1srmV:hover {
+  color: #8BBDD9;
+}
+.snackbar__actionButton__1srmV:active {
+  color: #BCD9EA;
+}
+.snackbar__closeIcon__2X6__ {
+  color: #959DA1 !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+.snackbar__closeButton__1jpTy {
+  background: none;
+  border-radius: 4px;
+  box-shadow: none;
+  flex: 0 0 auto;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 3px 0 1px;
+  padding: 0;
+  width: 26px;
+}
+.snackbar__closeButton__1jpTy:hover {
+  background: #222222;
+}
+.snackbar__closeButton__1jpTy:active {
+  background: #000000;
+}
+.snackbar__closeButton__1jpTy:focus {
+  background-image: none;
+}
+.snackbar__closeButton__1jpTy:hover .snackbar__closeIcon__2X6__ {
+  color: #A5ACB0 !important;
+}
+.snackbar__closeButton__1jpTy:active .snackbar__closeIcon__2X6__ {
+  color: #B6BBBF !important;
+}
+</style><style type="text/css">.content-skeleton__contentSkeletonContainer__3tDv- {
+  margin-top: 8px;
+}
+.content-skeleton__cardSkeleton__2RsLA {
+  margin-bottom: 16px;
+}
+.content-skeleton__titleSkeleton__mnn30 {
+  margin: 0 0 8px 20px;
+}
+</style><style type="text/css">.spinner__wrapper__1kzPN.spinner__centered__19TLF.spinner__inline__2B47E {
+  text-align: center;
+}
+.spinner__wrapper__1kzPN.spinner__centered__19TLF > .spinner__spinner__1Qtvp {
+  margin: 0 auto;
+}
+.spinner__wrapper__1kzPN.spinner__inline__2B47E > .spinner__spinner__1Qtvp {
+  display: inline-block;
+  vertical-align: middle;
+}
+.spinner__spinner__1Qtvp {
+  background-image: url(https://a.trellocdn.com/prgb/dist/images/spinner.dd88566680cbf35fabbf.gif);
+  background-size: 30px 30px;
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+.spinner__spinner__1Qtvp.spinner__small__36uxd {
+  background-size: 18px 18px;
+  height: 18px;
+  width: 18px;
+}
+.spinner__spinner__1Qtvp.spinner__modLeft__3jNWW {
+  margin-right: 3px;
+}
+</style><style type="text/css">.dismiss-animation__revealExpandStart__1VXgd {
+  max-height: 0px;
+  opacity: 0.01;
+  transition-property: opacity, max-height;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out, linear;
+}
+.dismiss-animation__revealExpandEnd__3NdPJ {
+  max-height: 300px;
+  opacity: 1;
+}
+.dismiss-animation__fadeCollapseStart__b6oU- {
+  max-height: 300px;
+  opacity: 1;
+  transition-property: opacity, max-height;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out, linear;
+}
+.dismiss-animation__fadeCollapseEnd__23I4g {
+  max-height: 0px;
+  opacity: 0.01;
+}
+</style><style type="text/css">.highlight-section__m-badge-toggle-default__3Q_OM {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.highlight-section__m-badge-toggle-off-idle__2fr6T {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.highlight-section__m-badge-toggle-off-hover__kc45O {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.highlight-section__m-badge-toggle-off-active__15EQF {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.highlight-section__m-badge-toggle-on-idle__1Ypk- {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.highlight-section__m-badge-toggle-on-hover__3kBR_ {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.highlight-section__m-badge-toggle-on-active__2mUGC {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.highlight-section__m-button-no-style__15a5v {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.highlight-section__m-button-no-style__15a5v,
+.highlight-section__m-button-no-style__15a5v:hover,
+.highlight-section__m-button-no-style__15a5v:active,
+.highlight-section__m-button-no-style__15a5v:focus {
+  background: none;
+}
+.highlight-section__highlightSection__sLa3M {
+  padding-bottom: 20px;
+}
+.highlight-section__highlight__1yPmi {
+  display: flex;
+  flex-direction: column;
+  will-change: max-height;
+}
+.highlight-section__highlight__1yPmi + .highlight-section__highlight__1yPmi {
+  padding-top: 16px;
+}
+.highlight-section__highlight__1yPmi:last-child {
+  padding-bottom: 0;
+}
+.highlight-section__showMoreButton__3Z9M4 {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-decoration: underline;
+}
+.highlight-section__showMoreButton__3Z9M4,
+.highlight-section__showMoreButton__3Z9M4:hover,
+.highlight-section__showMoreButton__3Z9M4:active,
+.highlight-section__showMoreButton__3Z9M4:focus {
+  background: none;
+}
+.highlight-section__showMoreButton__3Z9M4:hover {
+  color: #111;
+}
+.highlight-section__spinnerWrapper__1B-j2 {
+  padding: 19px 0;
+}
+</style><style type="text/css">.up-next-section__upNextCards__3JGAw {
+  margin: 0 auto;
+  max-width: 1250px;
+}
+.up-next-section__upNextCardList__28ABb {
+  display: flex;
+  flex-direction: column;
+}
+.up-next-section__upNextCardListItem__1YFIJ {
+  box-sizing: border-box;
+  position: relative;
+  will-change: max-height;
+}
+.up-next-section__upNextCardListItem__1YFIJ + .up-next-section__upNextCardListItem__1YFIJ {
+  padding-top: 16px;
+}
+.up-next-section__homeNoUpNextCards__124Xl {
+  margin-top: -24px;
+}
+</style><style type="text/css">.tile__m-badge-toggle-default__-J3OJ {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.tile__m-badge-toggle-off-idle__8e-U6 {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tile__m-badge-toggle-off-hover__1eECM {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tile__m-badge-toggle-off-active__mBNAU {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.tile__m-badge-toggle-on-idle__2OmXY {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tile__m-badge-toggle-on-hover__38jgF {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.tile__m-badge-toggle-on-active__2Q5wO {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.tile__m-button-no-style__94uVw {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.tile__m-button-no-style__94uVw,
+.tile__m-button-no-style__94uVw:hover,
+.tile__m-button-no-style__94uVw:active,
+.tile__m-button-no-style__94uVw:focus {
+  background: none;
+}
+.tile__tile__2tVYP {
+  align-items: center;
+  border-radius: 4px;
+  display: flex;
+  height: 48px;
+  overflow: hidden;
+  position: relative;
+}
+.tile__link__3kNHQ {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border-radius: 4px;
+  border: 0;
+  box-sizing: border-box;
+  color: #6B808C;
+  cursor: pointer;
+  display: flex;
+  height: 48px;
+  padding: 8px 40px 8px 8px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+}
+.tile__link__3kNHQ,
+.tile__link__3kNHQ:hover,
+.tile__link__3kNHQ:active,
+.tile__link__3kNHQ:focus {
+  background: none;
+}
+.tile__link__3kNHQ:hover {
+  background-color: rgba(9, 45, 66, 0.13);
+}
+.tile__link__3kNHQ:active {
+  background-color: rgba(9, 45, 66, 0.25);
+  background-image: none;
+}
+.tile__link__3kNHQ:focus {
+  background-image: none;
+}
+.tile__thumbnail__3-pqZ {
+  background-size: cover;
+  border-radius: 4px;
+  display: block;
+  flex: 0 0 auto;
+  height: 28px;
+  margin-right: 8px;
+  width: 32px;
+}
+.tile__text__2h6w7 {
+  display: block;
+  margin-right: 8px;
+  overflow: hidden;
+}
+.tile__linkText__BCNab {
+  color: #6B808C;
+}
+.tile__link__3kNHQ:hover .tile__linkText__BCNab,
+.tile__link__3kNHQ:active .tile__linkText__BCNab {
+  color: #17394D;
+}
+.tile__titleText__2TZbr {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #17394D;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.tile__quietText__EHcBH {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #6B808C;
+  display: block;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 14px;
+  margin-top: 1px;
+}
+.tile__secondaryButton__1JRAg {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+}
+.tile__secondaryButton__1JRAg,
+.tile__secondaryButton__1JRAg:hover,
+.tile__secondaryButton__1JRAg:active,
+.tile__secondaryButton__1JRAg:focus {
+  background: none;
+}
+.tile__tile__2tVYP:hover .tile__secondaryButton__1JRAg:hover {
+  background-color: rgba(9, 45, 66, 0.13);
+  border: 0;
+  box-shadow: none;
+}
+.tile__tile__2tVYP:hover .tile__secondaryButton__1JRAg:active {
+  background-color: rgba(9, 45, 66, 0.25);
+  border: 0;
+  box-shadow: none;
+}
+.tile__secondaryButtonIcon__2Xk8h {
+  color: transparent !important;
+  transition: 0.15s color;
+}
+.tile__secondaryButtonIcon__2Xk8h.tile__selected__1yvgN,
+.tile__tile__2tVYP:hover .tile__secondaryButtonIcon__2Xk8h.tile__selected__1yvgN {
+  color: #E6C60D !important;
+  display: block;
+}
+.tile__tile__2tVYP:hover .tile__secondaryButtonIcon__2Xk8h {
+  color: #959DA1 !important;
+  display: block;
+}
+.tile__icon__3uDLJ,
+.tile__buttonIcon__1qcR9 {
+  color: #798D99 !important;
+  display: flex !important;
+  height: 28px !important;
+  width: 32px !important;
+  align-items: center;
+  border-radius: 4px;
+  margin-right: 8px;
+  flex: 0 0 auto;
+  justify-content: center;
+}
+.tile__buttonIcon__1qcR9 {
+  background-color: #DFE3E6;
+  box-shadow: 0 1px 0 0 #C2CCD1;
+  border: none;
+  transition-property: background-color, border-color, box-shadow;
+  transition-duration: 85ms;
+  transition-timing-function: ease;
+}
+.tile__link__3kNHQ:hover .tile__buttonIcon__1qcR9,
+.tile__link__3kNHQ:active .tile__buttonIcon__1qcR9 {
+  background-color: #C2CCD1;
+  box-shadow: 0 1px 0 0 #B3BEC4;
+  border: none;
+}
+</style><style type="text/css">.board__boardSection__rUhRs {
+  padding-bottom: 24px;
+}
+</style><style type="text/css">.link__linkSection__2WFin {
+  padding-bottom: 24px;
+}
+</style><style type="text/css">.header-tab-bar__m-badge-toggle-default__3D94V {
+  background-color: #F5F6F7;
+  border-radius: 2px;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+  height: 20px;
+  width: 20px;
+}
+.header-tab-bar__m-badge-toggle-off-idle__2gioE {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.header-tab-bar__m-badge-toggle-off-hover__iQ13b {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.header-tab-bar__m-badge-toggle-off-active__rW6fe {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.header-tab-bar__m-badge-toggle-on-idle__2hrK_ {
+  background-color: #F5F6F7;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.header-tab-bar__m-badge-toggle-on-hover__3beTl {
+  background-color: #EBEEF0;
+  box-shadow: inset 0 0 0 2px #DFE3E6;
+}
+.header-tab-bar__m-badge-toggle-on-active__DTwIp {
+  background-color: #DFE3E6;
+  box-shadow: inset 0 0 0 2px #B3BEC4;
+}
+.header-tab-bar__m-button-no-style__Phx8M {
+  font-weight: 400;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+.header-tab-bar__m-button-no-style__Phx8M,
+.header-tab-bar__m-button-no-style__Phx8M:hover,
+.header-tab-bar__m-button-no-style__Phx8M:active,
+.header-tab-bar__m-button-no-style__Phx8M:focus {
+  background: none;
+}
+.header-tab-bar__headerTab__1siFq {
+  align-items: center;
+  display: flex;
+  margin-right: 8px;
+  padding: 0 24px 8px 12px;
+}
+.header-tab-bar__headerTab__1siFq.header-tab-bar__active__1nB6Z {
+  margin-bottom: -2px;
+  color: #17394D;
+  border-bottom: 2px solid #5BA4CF;
+}
+.header-tab-bar__headerTab__1siFq:not(.header-tab-bar__active__1nB6Z) {
+  cursor: pointer;
+  color: #A5ACB0;
+  text-decoration: none;
+}
+.header-tab-bar__headerTabBar__3hYkb {
+  border-bottom: 2px solid #D6DADC;
+  display: flex;
+  justify-content: flex-start;
+}
+.header-tab-bar__icon__3r2K_ {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 2px;
+  color: #798D99;
+}
+.header-tab-bar__headerTab__1siFq.header-tab-bar__active__1nB6Z .header-tab-bar__icon__3r2K_ {
+  color: #0079BF;
+}
+.header-tab-bar__iconSpan__n7c7W {
+  color: currentcolor !important;
+}
+</style><style type="text/css">.team-card-due-scroll-navigation__countContainer__1ozu8 {
+  align-items: center;
+  background-color: #E2E4E6;
+  border-radius: 18px;
+  display: flex;
+  font-size: 10px;
+  height: 16px;
+  justify-content: center;
+  min-width: 24px;
+}
+.team-card-due-scroll-navigation__selected__30LjL.team-card-due-scroll-navigation__countContainer__1ozu8 {
+  background-color: #298FCA;
+  color: white;
+}
+.team-card-due-scroll-navigation__cardDueTabButton__jVUSR {
+  margin-top: 4px;
+}
+.team-card-due-scroll-navigation__cardDueContainer__Kgeta:first-of-type .team-card-due-scroll-navigation__cardDueTabButton__jVUSR {
+  margin-top: 0;
+}
+</style><style type="text/css">.team-cards-due-empty__empty__3gi8R {
+  align-items: center;
+  background-color: #EBEEF0;
+  border-radius: 4px;
+  color: #6B808C;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin: -8px 8px 40px 8px;
+  padding: 8px;
+}
+.team-cards-due-empty__emptyToday__32zvn {
+  align-items: center;
+  border-top: 1px solid #EBEEF0;
+  display: flex;
+  flex-direction: column;
+  margin: -8px 8px 40px 8px;
+  padding: 16px;
+}
+.team-cards-due-empty__image__1XZuu {
+  display: block;
+}
+.team-cards-due-empty__title__WBsd9 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.team-cards-due-empty__subtitle__1m0e6 {
+  color: #6B808C;
+}
+</style><style type="text/css">.team-cards-due-section__dueDateSection__37Ql8 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 12px 16px 0 8px;
+}
+.team-cards-due-section__dueDateCard__12R7F {
+  padding-bottom: 16px;
+  padding-left: 8px;
+}
+.team-cards-due-section__dueList__2MnTD {
+  margin: -8px 0 16px 0;
+}
+.team-cards-due-section__scrollNavContainer__1iDzf {
+  flex: 0 0 auto;
+  padding-top: 40px;
+  width: 260px;
+}
+.team-cards-due-section__dueDateLists__3Kjkq {
+  flex: 0 0 auto;
+  padding-top: 8px;
+  width: 436px;
+}
+</style>
+  <script>TrelloPerf.stopMeasurement(TrelloPerf.Keys.APP);</script>
+  <script>(function(b,c){var a=b.createElement("link");a.href=c;a.rel="stylesheet";a.type="text/css";b.getElementsByTagName("head")[0].appendChild(a)})(document,"https://a.trellocdn.com/prgb/dist/images.0a827509b19560815767.css");</script><link href="./_ Build Wireframe on Taking Notes _ Trello_files/images.0a827509b19560815767.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="./_ Build Wireframe on Taking Notes _ Trello_files/core.b29931dabe9c06641166.css" onerror="_failed(this)">
+
+  <link rel="mask-icon" href="https://a.trellocdn.com/prgb/dist/images/pinned-tab-icon.225c8d1cf8bbf74add43.svg" color="#0079BF">
+
+  <!-- For third-generation iPad with high-resolution Retina display and iOS7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-152x152-precomposed.0307bc39ec6c9ff499c8.png">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-144x144-precomposed.0dbf6daf256eb7678e5e.png">
+  <!-- For iPhone with high-resolution Retina display and iOS7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-120x120-precomposed.a68051b5c9144abe859b.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-114x114-precomposed.7f4a80b64fd8fd99840b.png">
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-72x72-precomposed.91a3a04ec68a60903801.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="https://a.trellocdn.com/prgb/dist/images/ios/apple-touch-icon-precomposed.8de2074e8a785dd5d498.png">
+
+  <!-- To enable tab-to-search in Chrome -->
+  <link type="application/opensearchdescription+xml" rel="search" href="https://trello.com/osd.xml">
+<link id="favicon" rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHgElEQVR4Xu1beVATZxT/bRICAYEECLXggYIUwYJKFS88xmo7dYoHoo4nKPUYrYpWRxQJtDhqp6JVa+tR8ZrWakXttN4ddbSeeOB4dFQQD7y4wi05O8uxSSAhm+yG7HT4ZviD7Hu/995vv+t9bz8Cpppv8Fb4hIyG1E8Kb/93cJVqIHIVgu8gMKnD8oMPvETYGd0V/Tq6MUJ+8DD3VdfAzpEEQeQ0BiKaIPv3XoHgoWnoNpyRUabKs3r7YHNUFwh4TV20BluhUmPH/swjc6eMG62vb4jeIyoXH89rB4GDgzVG2NJZOaQjvh7WySic+tVzKLIuQZGdBU1xIdTy4lo5ntgDfE8phKHhEPYaAH5bX6P6adt/K1k5c4JHw0MdAeFjnmD4l35sBWEtTkL/dkgfEdBEXf3yOSr3bYUi+zotaGFYL7hMnWOUiGWb9havnT/VkwSqIyBwoAyjkpJacnwbi2JYgAQn4sJg0Os1GlTu34nqY4cArYZW8JQQjwfRiBi4jIsFeDzqZ40WmJuavuun1MVxdQSMTNYieIhl4CxLd5U64/rccLgI+RSytkyO0nUyqB7/y8iaoEsw3BfJQLiJKZzi8mp4uIo8CbQL3Y7JG+JAEDrLjMxZp3x1Tjh6t3fVKSuVkKcmQPXkkXWAjbQEnQMhTk4H9Ka3i9du5hIYGFeI/nXjwV5teIAEJ6eHGZgv2/ANFNcvsuqSMCISbvOTDDAJRKdpEdifvqGip4D8NVCSD1SXm9YTuQISX8D9fcCrQ7P4ByeGYGw3KSVDBk4SYIvmtjAZwl66eAnEZ9RA6iekY8wvey9kM8bCz8cb3UOCIHZ1aVbt3JUbkFdUIWH9LuSFTTEqKxLwULRyAEQOukmq5Kt4kMudLRrftwMk326noAkkHK2Bk5tZAmJrziJjXapVPskrqpEgW4Ndjk0n2ugQKX6fFELhqh7dhzwlwSo7dJXEqRsgCOhaK05g6WkV+IJmJ0DyzT/562e6+EblSBJ6jJ/XpCf8OiEYE0K9KZ2qAxmoOrqfkS1zys6jJsI5Zlo9AYlntc0qFD7DkfGdMXLoAHO4Zp/vPnwCsSfeAJ4dKdkHCb0RJHWm/i9duwLKO1lmsZgIOIT1gvvSNJoE5FzFuUXDMCiiJxObtbrnr97E4PTTgH8EhfVmeX94t9HtvEuWzoQ6/yljW80B8Nv7QbJmK00CsjKhPbWRFYfk5ZWQRCcCH42h8DSrBoPQy0gKYz8HlApW7JkCIVzawHPbIZoEXNgN7YUM1hwiImMB8q++VaREGuz+CqdHATU1rNkzCuToBK+dR7lBQO6SPugkcaL8LE6YBs3b1zYlgP+eDyTpdS+VgLlJ0MY94PLsnujTQXfgQS6B5FJoy+YQ9CHcV37HDQK2jAzEnAgfKl4y5a0+nmnL+CH6LBouk2Zyg4DRwV7InNyNCpjM/OSyBTYlQJy2GYJOXbhBgIsDD+UpAw1WAnnSPNaywMZMCvwCIF71A/Wz3ecA0pNLs3uir948oHp4D/LURTbpBeKU9SDPBxoaJwggM0EyI9RvlXu2oPpk3VLFVhN9Mqr2mEy/cYIA0qEzM8Iw1F+i802jqTsQYXga1AAoCAiCWLbe4Gjs0N0C+y+DDQ52cHfErTmh8HDTpdjkkZh8TSLUT3MZdQJ++04QL18Lws2dwil9p0LguqvcIYD0bGDZZZzfnGgYbE0NStNlUN69ZRUJDqHhcF8oAxwdKX3yUPTTjGycflzCLQJgatOl1UBx4wqqjvxCe3UQBAbDeUQMhOF9YbDEAFjw5yNsvJTPjWXQ4LXS2HVShZE7N6ApKoBaXlS7oeWLPcCrL4w4RgwCz7ttkx6j1mix+FgOvr/0glurAOUNDQKsGgcAymrUiNpzB+eflHJzFaj1ygYEaLXAvttvsOT4Y7ypUDbhjzPLoC0IOJN1D0suV+P2qwqTHed/TUDjswdjLHCLABZPn0orqiAes8zg9In7BNj4/JH7BBQ9xZFx/uydQB9/a7Yqxa0hAICNGkRp5Tt0HzfXZDWKk8mQvlNMqlBk8AuTVxutQnF/COh5SPaEDYviIG7jXFuHdG+jK54YC4SsOeS9fIuUHQdpvfkGDM4NAYPgCp8Bpa/qK9FlpjeBIre6SrS4rUHVic6ukdsE0ImAoUwrAfauCzB8gYzVW3tAaw+wc2mMcR9mCNA6BFqHgLkhYIcUlWGvtkjd/BCwQ4pqUQQMhc0TYIcUlWFMFqmbJ8AOKapFETAUpkUAaaMlU1SGMVmkTutDyQbElkpRLYqAibBapab9qSxlpwVSVCYxWaT7rkxBYPY+BSS+dr0jZJHTbAqX5Cst/1yeTQfsjfXwHxDoN6kAg+K97O2LXeyf31FIwNv/R0zf/oW9r8y0OAFarRo747dx5tJUixNw/yxw9Ov6z5T9whMRszrV3hcmW4wEtVKFA0uTkXd7NecuTrYICac25eFGZu3VVE5enbUZCSqlEmc2v8CtPzo32ODs5WnWSbh7Crj/dxJyrq3SxzZ9NZsD1+etIoEc39XlCpQX8PA2xwkFeQV4ee8w8u/PMob3HzoJhHejR0OQAAAAAElFTkSuQmCC"></head>
+<body class="">
+  <div id="root" style="display: none;"></div>
+  <div id="classic-body" class="chrome chrome-69 windows body-webkit-scrollbars body-board-view" style="background-color: rgb(0, 121, 191);">
+    <div id="classic">
+      <div id="nocss">
+        Your browser was unable to load all of Trello's resources.  They may have been blocked by your firewall, proxy or browser configuration.<br>
+        Press Ctrl+F5 or Ctrl+Shift+R to have your browser try again and if that doesn't work, check out our <a href="http://help.trello.com/article/771-loading-resources-from-trellos-cdn">troubleshooting guide</a>.
+        <hr>
+      </div>
+      <noscript class="big-message"><h1>To use Trello, please enable JavaScript.</h1></noscript>
+      <div id="boards-drawer"><div class="boards-drawer"><div class="boards-drawer-header"><h3>Boards</h3></div><div class="board-drawer-content u-fancy-scrollbar"><input class="js-search-boards" type="text" name="search-boards" placeholder="Find boards by name…"><div class="js-board-drawer-boards"><div><p class="quiet u-text-align-center hide" style="margin: 6px 4px 0 0; padding: 8px 12px;">No Boards</p><div class="starred-sidebar-boards-list js-starred-boards"><div><div class="sidebar-section-header quiet js-sidebar-section-header bold"><span class="icon-sm icon-star sidebar-section-header-icon"></span><span class="sidebar-section-header-title">Starred Boards</span><span class="icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span></div><div class="js-section-content"><div class="js-starred-empty-state sidebar-starred-boards-empty-state">Star your most important boards to keep them right at your fingertips.</div><ul class="sidebar-boards-list js-board-list hide"></ul><div><a class="dark-hover quiet-button js-show-all-section-boards hide" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div></div></div></div><div class="js-recent-boards"><div><div class="sidebar-section-header quiet js-sidebar-section-header bold"><span class="icon-sm icon-clock sidebar-section-header-icon"></span><span class="sidebar-section-header-title">Recent Boards</span><span class="icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span></div><div class="js-section-content"><div class="js-starred-empty-state sidebar-starred-boards-empty-state hide"></div><ul class="sidebar-boards-list js-board-list"><li class="compact-board-tile"><div class="compact-board-tile-wrapper"><span class="compact-board-tile-background" style="background-color: #0079BF;"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link dark" href="https://trello.com/b/uMaX4QIo/taking-notes"><span class="compact-board-tile-link-thumbnail" style="background-color: #0079BF;"></span><span class="compact-board-tile-link-text details has-sub-name"><span class="compact-board-tile-link-text-name" title="Taking Notes">Taking Notes</span><span class="compact-board-tile-link-text-sub-name" title="bootCampBuddy">bootCampBuddy</span></span><span class="compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread" title="There is new activity on this board."></span><span class="icon-sm icon-close js-remove-board compact-board-tile-link-options-remove" title="Click to remove this board from your recent boards."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board" title="Click to star this board. It will show up at top of your boards list."></span></span></a></div></li><li class="compact-board-tile"><div class="compact-board-tile-wrapper"><span class="compact-board-tile-background" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/768x960/43f53877e6deedd70723f0bfc0059cff/photo-1535968881874-0c39f1503640.jpg&#39;);"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link light" href="https://trello.com/b/uz8EUcZF/main-project-board"><span class="compact-board-tile-link-thumbnail" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/768x960/43f53877e6deedd70723f0bfc0059cff/photo-1535968881874-0c39f1503640.jpg&#39;);"></span><span class="compact-board-tile-link-text details has-sub-name"><span class="compact-board-tile-link-text-name" title="National Parks Travel Guide">National Parks Travel Guide</span><span class="compact-board-tile-link-text-sub-name" title="KU Coding Bootcamp">KU Coding Bootcamp</span></span><span class="compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread" title="There is new activity on this board."></span><span class="icon-sm icon-close js-remove-board compact-board-tile-link-options-remove" title="Click to remove this board from your recent boards."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board" title="Click to star this board. It will show up at top of your boards list."></span></span></a></div></li></ul><div><a class="dark-hover quiet-button js-show-all-section-boards hide" href="https://trello.com/b/uMaX4QIo/taking-notes#">Show less active boards (0)</a></div></div></div></div><div class="js-all-boards"><div class=""><div class="sidebar-section-header quiet js-sidebar-section-header bold"><span class="icon-sm icon-board sidebar-section-header-icon"></span><span class="sidebar-section-header-title">Personal Boards</span><span class="icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span></div><div class="js-section-content"><div class="js-starred-empty-state sidebar-starred-boards-empty-state hide"></div><ul class="sidebar-boards-list js-board-list"><li class="compact-board-tile"><div class="compact-board-tile-wrapper"><span class="compact-board-tile-background" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/640x960/6b3ab1cdb4876866724a4731345e39a5/photo-1538237910653-df984238c96e.jpg&#39;);"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link light" href="https://trello.com/b/xENeEePG/programming-languages"><span class="compact-board-tile-link-thumbnail" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/640x960/6b3ab1cdb4876866724a4731345e39a5/photo-1538237910653-df984238c96e.jpg&#39;);"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name" title="Programming Languages">Programming Languages</span></span><span class="compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread" title="There is new activity on this board."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board" title="Click to star this board. It will show up at top of your boards list."></span></span></a></div></li></ul><div><a class="dark-hover quiet-button js-show-all-section-boards hide" href="https://trello.com/b/uMaX4QIo/taking-notes#">Show less active boards (0)</a></div></div></div><div class=""><div class="sidebar-section-header quiet js-sidebar-section-header bold"><a class="dark-hover" href="https://trello.com/bootcampbuddy"><span class="icon-sm icon-organization sidebar-section-header-icon"></span><span class="sidebar-section-header-title mod-clickable">bootCampBuddy</span><span class="icon-sm icon-business-class sidebar-section-header-bc-icon hide js-has-business-class"></span></a><span class="icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span></div><div class="js-section-content"><div class="js-starred-empty-state sidebar-starred-boards-empty-state hide"></div><ul class="sidebar-boards-list js-board-list"><li class="compact-board-tile"><div class="compact-board-tile-wrapper"><span class="compact-board-tile-background" style="background-color: #0079BF;"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link dark" href="https://trello.com/b/uMaX4QIo/taking-notes"><span class="compact-board-tile-link-thumbnail" style="background-color: #0079BF;"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name" title="Taking Notes">Taking Notes</span></span><span class="compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread" title="There is new activity on this board."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board" title="Click to star this board. It will show up at top of your boards list."></span></span></a></div></li></ul><div><a class="dark-hover quiet-button js-show-all-section-boards hide" href="https://trello.com/b/uMaX4QIo/taking-notes#">Show less active boards (0)</a></div></div></div><div><div class="sidebar-section-header quiet js-sidebar-section-header bold"><a class="dark-hover" href="https://trello.com/kucodingbootcamp"><span class="icon-sm icon-organization sidebar-section-header-icon"></span><span class="sidebar-section-header-title mod-clickable">KU Coding Bootcamp</span><span class="icon-sm icon-business-class sidebar-section-header-bc-icon hide js-has-business-class"></span></a><span class="icon-sm icon-remove sidebar-section-header-toggle-icon dark-hover js-collapse-section"></span><span class="icon-sm icon-add sidebar-section-header-toggle-icon dark-hover js-expand-section hide"></span></div><div class="js-section-content"><div class="js-starred-empty-state sidebar-starred-boards-empty-state hide"></div><ul class="sidebar-boards-list js-board-list"><li class="compact-board-tile"><div class="compact-board-tile-wrapper"><span class="compact-board-tile-background" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/768x960/43f53877e6deedd70723f0bfc0059cff/photo-1535968881874-0c39f1503640.jpg&#39;);"></span><span class="compact-board-tile-fade"></span><a class="js-open-board compact-board-tile-link light" href="https://trello.com/b/uz8EUcZF/main-project-board"><span class="compact-board-tile-link-thumbnail" style="background-image: url(&#39;https://trello-backgrounds.s3.amazonaws.com/SharedBackground/768x960/43f53877e6deedd70723f0bfc0059cff/photo-1535968881874-0c39f1503640.jpg&#39;);"></span><span class="compact-board-tile-link-text details"><span class="compact-board-tile-link-text-name" title="National Parks Travel Guide">National Parks Travel Guide</span></span><span class="compact-board-tile-link-options"><span class="compact-board-tile-link-options-unread js-unread" title="There is new activity on this board."></span><span class="icon-sm icon-star compact-board-tile-link-options-star js-star-board" title="Click to star this board. It will show up at top of your boards list."></span></span></a></div></li></ul><div><a class="dark-hover quiet-button js-show-all-section-boards hide" href="https://trello.com/b/uMaX4QIo/taking-notes#">Show less active boards (0)</a></div></div></div></div></div></div><div class="js-board-drawer-buttons"><div><a class="quiet-button js-add-board" href="https://trello.com/b/uMaX4QIo/taking-notes#">Create new board…</a><a class="quiet-button js-pin" href="https://trello.com/b/uMaX4QIo/taking-notes#">Always keep this menu open.</a><a class="quiet-button hide js-unpin" href="https://trello.com/b/uMaX4QIo/taking-notes#">Don’t keep this menu open.</a><a class="quiet-button js-open-closed-boards" href="https://trello.com/b/uMaX4QIo/taking-notes#">See closed boards…</a></div></div></div></div></div>
+      <p id="notification" style="display: none;"></p>
+      <div id="surface">
+        <div id="header"><a class="header-logo js-home-via-logo" href="https://trello.com/" aria-label="Trello Home"><span class="header-logo-loading"></span><span class="header-logo-default"></span></a><div class="header-back-button"><a class="header-btn js-back-menu" href="https://trello.com/" aria-label="Back to Home"><span class="header-btn-icon icon-lg icon-house light"></span></a></div><div class="header-boards-button"><a class="header-btn header-boards js-boards-menu" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="header-btn-icon icon-lg icon-board light"></span><span class="header-btn-text">Boards</span></a></div><div><a class="header-btn open-search-btn js-open-search-page" href="https://trello.com/search" title="Search for boards, cards, members, and teams."><span class="header-btn-icon icon-lg icon-search light"></span></a><div class="header-search"><input class="header-search-input js-search-input js-disable-on-dialog disabled-for-dialog" type="text" autocomplete="off" autocorrect="off" spellcheck="false" value=""><span class="header-search-icon icon-lg icon-search light js-search-icon"></span><span class="header-search-icon header-search-icon-close icon-lg icon-close light hide js-close-icon js-search-close"></span><a class="header-search-icon header-search-icon-open icon-lg icon-external-link light hide js-open-button js-open-search-page" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div></div><div><a class="header-btn header-woof woof-hide" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="taco-talk-small-icon"></span><span class="header-btn-text"><span class="left-arrow"></span><span class="js-phrase">New stuff!</span></span></a></div><div class="header-user"><a class="header-btn js-open-add-menu" href="https://trello.com/b/uMaX4QIo/taking-notes#" aria-label="Create Board or Organization"><span class="header-btn-icon icon-lg icon-add light"></span></a><a class="header-btn header-info js-open-header-info-menu" href="https://trello.com/b/uMaX4QIo/taking-notes#" aria-label="Open Information Menu"><span class="header-btn-icon icon-lg icon-information light"></span></a><a class="header-btn header-notifications js-open-header-notifications-menu new-notifications" href="https://trello.com/b/uMaX4QIo/taking-notes#" aria-label="Notifications"><span class="header-btn-icon icon-lg icon-notification light"></span></a><a class="header-btn header-avatar js-open-header-member-menu" href="https://trello.com/b/uMaX4QIo/taking-notes#" aria-label="Open Member Menu"><span class="member"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></span></a></div></div>
+        <!-- If something ever goes really wrong, this is where -->
+        <!-- We're intentionally embedding styling, in case there's a CDN issue -->
+        <!-- The format of the comment is recognized by the server -->
+        <!-- htmlmin:ignore -->
+        
+        <!-- htmlmin:ignore -->
+        <div id="content" tabindex="-1"><div class="board-wrapper"><div class="board-main-content"><div class="board-header u-clearfix js-board-header"><a class="board-header-btn board-header-btn-name js-rename-board" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="board-header-btn-text" dir="auto">Taking Notes</span></a><a class="board-header-btn js-star-board" href="https://trello.com/b/uMaX4QIo/taking-notes#" title="Click to star or unstar this board. Starred boards show up at the top of your boards list." aria-label="Star or Unstar Board"><span class="icon-sm icon-star board-header-btn-icon"></span></a><span class="board-header-btn-divider"></span><a class="board-header-btn board-header-btn-org-name js-open-org-menu board-header-btn-without-icon" href="https://trello.com/bootcampbuddy" data-boardtype="Free"><span class="board-header-btn-text">bootCampBuddy<span class="org-label">Free</span></span></a><span class="board-header-btn-divider"></span><div class="board-header-btns mod-left"><a class="board-header-btn hide js-open-desc js-fill-desc" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-description board-header-btn-icon"></span></a><a id="permission-level" class="board-header-btn perms-btn js-change-vis" href="https://trello.com/b/uMaX4QIo/taking-notes#" title="All members of the team can see and edit this board."><span class="board-header-btn-icon icon-sm icon-organization-visible"></span><span class="board-header-btn-text">Team Visible</span></a><span class="board-header-btn-divider js-collection-divider hide"></span><a class="board-header-btn hide js-collection" href="https://trello.com/b/uMaX4QIo/taking-notes#"><img class="board-header-btn-icon icon-sm collection-icon-img dark-icon" src="./_ Build Wireframe on Taking Notes _ Trello_files/collections-black.9dc0b9b8f7804172b734.svg"><img class="board-header-btn-icon icon-sm collection-icon-img light-icon" src="./_ Build Wireframe on Taking Notes _ Trello_files/collections.0e197fd2ec35638b8d79.svg"></a></div><span class="board-header-btn-divider"></span><div class="board-header-btns mod-left"><div class="board-header-facepile js-fill-facepile js-list-draggable-board-members"><div class="member js-member ui-draggable"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-type admin" title="This member is an admin of this board."></span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="board-header-btns mod-left"><a id="member-count" class="board-header-btn board-header-btn-round pile js-open-show-all-board-members js-fill-board-member-count" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div><a class="board-header-btn board-header-btn-round js-open-manage-board-members" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-add-member"></span></a></div><div class="board-header-btns mod-right"><a class="board-header-btn board-header-btn-filter-indicator hide js-filter-cards-indicator" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-filter board-header-btn-icon"></span><span class="board-header-btn-text u-text-underline">Filtering is on.</span><span class="icon-sm icon-close board-header-btn-icon-close js-filter-card-clear"></span></a><a class="board-header-btn sub-btn hide js-board-header-subscribed" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-subscribe board-header-btn-icon"></span><span class="board-header-btn-text u-text-underline">Watching</span></a><a class="board-header-btn calendar-btn hide js-calendar" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-calendar board-header-btn-icon"></span><span class="board-header-btn-text u-text-underline">Calendar</span></a><span class="js-plugin-header-btns"><span class="board-header-plugin-btns hide"></span></span><a class="board-header-btn mod-show-menu js-show-sidebar" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-overflow-menu-horizontal board-header-btn-icon"></span><span class="board-header-btn-text u-text-underline">Show Menu</span></a></div></div><div class="board-warnings u-clearfix js-board-warnings hide"></div><div class="board-canvas"><div id="board" class="u-fancy-scrollbar js-no-higher-edits js-list-sortable ui-sortable"><div class="js-list list-wrapper"><div class="list js-list-content"><div class="list-header js-list-header u-clearfix is-menu-shown"><div class="list-header-target js-editing-target"></div><h2 class="list-header-name-assist js-list-name-assist" dir="auto">Notes</h2><textarea class="list-header-name mod-list-name js-list-name-input" aria-label="Notes" spellcheck="false" dir="auto" maxlength="512" style="overflow: hidden; overflow-wrap: break-word; height: 30px;">Notes</textarea><div class="list-header-extras"><span class="list-header-extras-subscribe js-list-subscribed hide"><span class="icon-lg icon-subscribe"></span></span><a class="list-header-extras-menu dark-hover js-open-list-menu icon-lg icon-overflow-menu-horizontal" href="https://trello.com/b/uMaX4QIo/taking-notes#"><div></div></a></div><p class="list-header-num-cards hide js-num-cards">4 cards</p></div><div class="list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable"><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/86zBL3Vh/7-topics"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto"><span class="card-short-id hide">#7</span>Topics</span><div class="badges"><span class="js-badges"><div class="badge" title="Checklist items"><span class="badge-icon icon-sm icon-checklist"></span><span class="badge-text">0/3</span></div></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/7QYwbZz8/8-videos"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto"><span class="card-short-id hide">#8</span>Videos</span><div class="badges"><span class="js-badges"><div class="badge is-icon-only" title="This card has a description."><span class="badge-icon icon-sm icon-description"></span></div><div class="badge" title="Checklist items"><span class="badge-icon icon-sm icon-checklist"></span><span class="badge-text">0/1</span></div></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/qRxALkD8/9-bootcampbuddy-is-a-handy-app-for-keeping-notes-organized-in-class"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto"><span class="card-short-id hide">#9</span>bootCampBuddy is a handy app for keeping notes organized in class.</span><div class="badges"><span class="js-badges"></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/q0GtlgH4/10-session-data"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto"><span class="card-short-id hide">#10</span>Session Data</span><div class="badges"><span class="js-badges"><div class="badge is-icon-only" title="This card has a description."><span class="badge-icon icon-sm icon-description"></span></div></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a></div><a class="open-card-composer js-open-card-composer" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-add"></span><span class="js-add-a-card hide">Add a card</span><span class="js-add-another-card">Add another card</span></a></div></div><div class="js-list list-wrapper"><div class="list js-list-content"><div class="list-header js-list-header u-clearfix is-menu-shown"><div class="list-header-target js-editing-target"></div><h2 class="list-header-name-assist js-list-name-assist" dir="auto">TODO</h2><textarea class="list-header-name mod-list-name js-list-name-input" aria-label="TODO" spellcheck="false" dir="auto" maxlength="512" style="overflow: hidden; overflow-wrap: break-word; height: 30px;">TODO</textarea><div class="list-header-extras"><span class="list-header-extras-subscribe js-list-subscribed hide"><span class="icon-lg icon-subscribe"></span></span><a class="list-header-extras-menu dark-hover js-open-list-menu icon-lg icon-overflow-menu-horizontal" href="https://trello.com/b/uMaX4QIo/taking-notes#"><div></div></a></div><p class="list-header-num-cards hide js-num-cards">2 cards</p></div><div class="list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable"><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/moXetYt0/11-build-wireframe"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto"><span class="card-short-id hide">#11</span>1. Build Wireframe</span><div class="badges"><span class="js-badges"></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a><a class="list-card js-member-droppable ui-droppable" href="https://trello.com/c/201UcLzX/12-style-colors"><div class="list-card-cover js-card-cover"></div><span class="icon-sm icon-edit list-card-operation dark-hover js-open-quick-card-editor js-card-menu"></span><div class="list-card-stickers-area hide"><div class="stickers js-card-stickers"></div></div><div class="list-card-details"><div class="list-card-labels js-card-labels"></div><span class="list-card-title js-card-name" dir="auto">Style Colors</span><div class="badges"><span class="js-badges"></span><span class="custom-field-front-badges js-custom-field-badges"><span></span></span><span class="js-plugin-badges"><span></span></span></div><div class="list-card-members js-list-card-members"></div></div><p class="list-card-dropzone">Drop files to upload.</p><p class="list-card-dropzone-limited">Too many attachments.</p><p class="list-card-dropzone-restricted">Not allowed by your enterprise.</p></a><div class="card-composer hide"><div class="list-card js-composer"><div class="list-card-details u-clearfix"><div class="list-card-labels u-clearfix js-list-card-composer-labels"></div><textarea class="list-card-composer-textarea js-card-title" dir="auto" placeholder="Enter a title for this card…" style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 60px;"></textarea><div class="list-card-members js-list-card-composer-members"></div></div></div><div class="cc-controls u-clearfix"><div class="cc-controls-section"><input class="primary confirm mod-compact js-add-card" type="submit" value="Add Card"><a class="icon-lg icon-close dark-hover js-cancel" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div><div class="cc-controls-section mod-right"><a class="icon-lg icon-overflow-menu-horizontal dark-background-hover js-cc-menu" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div></div></div></div><a class="open-card-composer js-open-card-composer" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-add"></span><span class="js-add-a-card hide">Add a card</span><span class="js-add-another-card">Add another card</span></a></div></div><div class="js-add-list list-wrapper mod-add is-idle"><form><a class="open-add-list js-open-add-list" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="placeholder"><span class="icon-sm icon-add"></span>Add another list</span></a><input class="list-name-input" type="text" name="name" placeholder="Enter list title..." autocomplete="off" dir="auto" maxlength="512"><div class="list-add-controls u-clearfix"><input class="primary mod-list-add-button js-save-edit" type="submit" value="Add List"><a class="icon-lg icon-close dark-hover js-cancel-edit" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a></div></form></div></div></div></div><div class="board-menu js-fill-board-menu hide"><div class="board-menu-container"><div class="board-menu-tab-content"><div class="board-menu-header js-board-menu-title is-board-menu-default-view is-in-frame"><div class="board-menu-header-content"><a class="board-menu-header-back-button icon-lg icon-back js-pop-widget-view" href="https://trello.com/b/uMaX4QIo/taking-notes#" title="Go back."></a><h3 class="board-menu-header-title js-board-menu-title-text">Menu</h3><a class="board-menu-header-close-button icon-lg icon-close js-hide-sidebar" href="https://trello.com/b/uMaX4QIo/taking-notes#" title="Close the board menu."></a></div><hr class="board-menu-header-divider"></div><div class="board-menu-content u-fancy-scrollbar js-board-menu-content-wrapper"><div class="board-menu-content-frame"><p class="error js-file-too-large" style="margin: 12px 0 6px; display:none;">File too large. 10mb limit.</p><ul class="board-menu-navigation"><li class="board-menu-navigation-item mod-background"><a class="board-menu-navigation-item-link js-change-background" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="board-menu-navigation-item-link-icon js-fill-background-preview" style="background-color: rgb(0, 121, 191);"></span>&nbsp;Change Background</a></li><li class="board-menu-navigation-item"><a class="board-menu-navigation-item-link js-open-card-filter" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-filter board-menu-navigation-item-link-icon"></span>&nbsp;Filter Cards</a></li><li class="board-menu-navigation-item"><a class="board-menu-navigation-item-link js-open-power-ups" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-power-up board-menu-navigation-item-link-icon"></span>&nbsp;Power-Ups&nbsp;<span class="board-menu-navigation-item-link-count js-enabled-power-up-count"></span><span class="board-menu-navigation-item-new js-power-up-new hide">New</span><span class="board-menu-navigation-item-link-warning js-power-up-disable-timer hide"></span><div class="board-menu-navigation-item-link-summary">&nbsp;Calendar, Google Drive and more...</div></a></li><li class="board-menu-navigation-item"><a class="board-menu-navigation-item-link js-open-stickers" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-sticker board-menu-navigation-item-link-icon"></span>&nbsp;Stickers</a></li><li class="board-menu-navigation-item"><a class="board-menu-navigation-item-link js-open-more" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="icon-sm icon-overflow-menu-horizontal board-menu-navigation-item-link-icon"></span>&nbsp;More</a></li></ul><hr><a class="board-menu-section-header js-open-activity" href="https://trello.com/b/uMaX4QIo/taking-notes#"><span class="board-menu-section-header-icon icon-lg icon-activity"></span><span class="board-menu-section-header-title">Activity</span><span class="board-menu-section-header-count js-unread-activity-count"></span></a><div class="js-menu-action-list"><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added <a class="action-card" href="https://trello.com/c/201UcLzX">Style Colors</a> to TODO</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:41:31.221Z" href="https://trello.com/c/201UcLzX/12-style-colors#action-5bb599fbc714a078440937ab" title="October 3, 2018 11:41 PM">just now</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added <a class="action-card" href="https://trello.com/c/moXetYt0">1. Build Wireframe</a> to TODO</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:41:23.944Z" href="https://trello.com/c/moXetYt0/11-build-wireframe#action-5bb599f3b2f5ea208189e884" title="October 3, 2018 11:41 PM">a few seconds ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added TODO to this board</div><div class="phenom-meta quiet"><span class="date js-hide-on-sending" dt="2018-10-04T04:41:10.755Z" href="" title="October 3, 2018 11:41 PM">a few seconds ago</span><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added <a class="action-card" href="https://trello.com/c/q0GtlgH4">Session Data</a> to Notes</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:25:53.551Z" href="https://trello.com/c/q0GtlgH4/10-session-data#action-5bb59651fced3b79b6a160a0" title="October 3, 2018 11:25 PM">16 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived list Take Notes</div><div class="phenom-meta quiet"><span class="date js-hide-on-sending" dt="2018-10-04T04:24:53.538Z" href="" title="October 3, 2018 11:24 PM">17 minutes ago</span><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added <a class="action-card" href="https://trello.com/c/qRxALkD8">bootCampBuddy is a handy app for keeping notes organized in class.</a> to Notes</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:24:50.852Z" href="https://trello.com/c/qRxALkD8/9-bootcampbuddy-is-a-handy-app-for-keeping-notes-organized-in-class#action-5bb59612776449602453100d" title="October 3, 2018 11:24 PM">17 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived list Organize Notes</div><div class="phenom-meta quiet"><span class="date js-hide-on-sending" dt="2018-10-04T04:24:13.042Z" href="" title="October 3, 2018 11:24 PM">17 minutes ago</span><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived <a class="action-card" href="https://trello.com/c/itUNqzGz">The app will allow you to click on your notes and jump to that point in the panopto video.</a></div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:23:54.266Z" href="https://trello.com/c/itUNqzGz/3-the-app-will-allow-you-to-click-on-your-notes-and-jump-to-that-point-in-the-panopto-video#action-5bb595da00a5170f81182534" title="October 3, 2018 11:23 PM">18 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived <a class="action-card" href="https://trello.com/c/CXI9nslR">You may also search your notes by topics.</a></div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:23:32.513Z" href="https://trello.com/c/CXI9nslR/6-you-may-also-search-your-notes-by-topics#action-5bb595c43a4caf0a73e9628a" title="October 3, 2018 11:23 PM">18 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived list Videos</div><div class="phenom-meta quiet"><span class="date js-hide-on-sending" dt="2018-10-04T04:23:16.658Z" href="" title="October 3, 2018 11:23 PM">18 minutes ago</span><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added Checklist to <a class="action-card" href="https://trello.com/c/7QYwbZz8">Videos</a></div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:23:05.877Z" href="https://trello.com/c/7QYwbZz8/8-videos#action-5bb595a9e3a8a10ffea18f15" title="October 3, 2018 11:23 PM">19 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> added <a class="action-card" href="https://trello.com/c/7QYwbZz8">Videos</a> to Notes</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:22:44.157Z" href="https://trello.com/c/7QYwbZz8/8-videos#action-5bb59594cd168979253928ca" title="October 3, 2018 11:22 PM">19 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived list Topics</div><div class="phenom-meta quiet"><span class="date js-hide-on-sending" dt="2018-10-04T04:22:39.765Z" href="" title="October 3, 2018 11:22 PM">19 minutes ago</span><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> archived <a class="action-card" href="https://trello.com/c/2TguQH5I">Tags can also be added to the video by any student.</a></div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:22:33.315Z" href="https://trello.com/c/2TguQH5I/5-tags-can-also-be-added-to-the-video-by-any-student#action-5bb595894b620e612b9f6445" title="October 3, 2018 11:22 PM">19 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div><div class="phenom mod-attachment-type"><div class="phenom-creator"><div class="member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="member-initials" title="Dustin Watkins (dustinwatkins7)">DW</span><span class="member-gold-badge" title="This member has Trello Gold."></span></div></div><div class="phenom-desc"><span class="inline-member js-show-mem-menu" idmember="5ba661e1eac9a67b3d41b6f5"><span class="u-font-weight-bold">Dustin Watkins</span></span> moved <a class="action-card" href="https://trello.com/c/2TguQH5I">Tags can also be added to the video by any student.</a> from Topics to Notes</div><div class="phenom-meta quiet"><a class="date js-hide-on-sending js-highlight-link" dt="2018-10-04T04:21:55.447Z" href="https://trello.com/c/2TguQH5I/5-tags-can-also-be-added-to-the-video-by-any-student#action-5bb59563a6b05b5113810fe0" title="October 3, 2018 11:21 PM">20 minutes ago</a><span class="js-spinner hide"><span class="spinner spinner--inline mod-left small"></span> Sending…&nbsp;</span></div></div></div><a class="show-more js-fill-activity-button js-open-activity" href="https://trello.com/b/uMaX4QIo/taking-notes#">View all activity…</a></div></div></div></div></div></div></div>
+        <div id="footer">
+          <div id="contact-us" style="display:none">
+            If you're having trouble loading Trello, <a href="http://help.trello.com/article/736-troubleshooting-browser-issues-with-trello" target="support">check out our troubleshooting guide</a> or <a href="https://trello.com/contact?context=load-failure&amp;source=from%20in%20app%20footer" target="contact">contact us</a>!
+          </div>
+          <div id="footer-chrome" style="display:none"></div>
+        </div>
+      </div>
+      <div class="window-overlay" style="">
+        <div class="window" style="display: none;">
+          <a class="focus-dummy" href="https://trello.com/b/uMaX4QIo/taking-notes#"></a>
+          <div class="window-wrapper js-tab-parent"></div>
+        </div>
+      </div>
+      <div class="pop-over" style="left: 8px; top: 86px;"></div>
+      <div class="tooltip-container">
+      </div>
+      <div id="clipboard-container" style="display: none;"></div>
+    </div>
+  </div>
+  <script>TrelloPerf.stopMeasurement(TrelloPerf.Keys.HTML);</script>
+
+
+<iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" src="./_ Build Wireframe on Taking Notes _ Trello_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; top: -9999px; right: -9999px; bottom: -9999px; display: none;"></iframe><textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; overflow-wrap: break-word; overflow: hidden; transition: none 0s ease 0s; height: 0px !important; min-height: 0px !important; width: 82px; font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; white-space: pre-wrap; line-height: 20px;" class="autosizejs" id="autosizejs"></textarea></body></html>

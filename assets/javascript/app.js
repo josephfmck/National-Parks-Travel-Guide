@@ -17,9 +17,15 @@ $('document').ready(function () {
     $(document).on("click", '#current-weather', function () {
         getWeatherData('weather');
     });
-    $(document).on("click", '#park-description', function () {
-        getData('parks');
+
+
+
+ 
+    $(document).on("click", '.clickable', function () {
+        getData($(this).data('category'));
     });
+    
+    
     $(document).on("click", '#park-visitors', function () {
         getData('visitorcenters');
     });
@@ -28,9 +34,6 @@ $('document').ready(function () {
     });
     $(document).on("click", '#park-alerts', function () {
         getData('alerts');
-    });
-    $(document).on("click", '#park-articles', function () {
-        getData('articles');
     });
     $(document).on("click", '#park-header', function () {
         $content.empty();
