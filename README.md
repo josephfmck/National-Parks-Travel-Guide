@@ -4,7 +4,7 @@ The National Parks Travel Guide is a website that allows users to gather informa
 
 https://josephfmck.github.io/National-Parks-Travel-Guide/
 
-![ScreenShot of our page](assets/images/ScreenShot.PNG)
+![ScreenShot of our page](assets/images/App-Screenshot.JPG)
 
 ## Getting Started
 
