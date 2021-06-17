@@ -1,98 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>National Parks Travel Guide</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="park-html-content"></div>
 
-<head>
-  <title id="park-title">Park-Name - National Parks Travel Guide</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
-    crossorigin="anonymous">
-  <!-- Link to external CSS files -->
-  <link rel="stylesheet" href="assets/css/style.css">
-<!-- Favicon -->
-<link rel="icon" href="assets/images/NPS-favicon.png" type="image/png" sizes="16x16">
-</head>
-
-<body class="pb-5" id='park-body' background="assets/images/park-name.jpg">
-  <div class="container">
-    <a href="#">
-      <h2 class="text-center" id="park-header"><strong>PARK-NAME</strong></h2>
-    </a>
-  </div>
-  <div class="container  mb-5">
-    <div class="row">
-      <div class="col-lg-12">
-
-        <div id="content"></div>
-      </div>
-
-    </div>
-  </div>
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
-    crossorigin="anonymous"></script>
-  <!-- firebase -->
-  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.2.1/moment.min.js"></script>
-  <script src='assets/javascript/app.js'></script>
-</body>
-<footer class="footer footer-parks">
-  <div class="btn dropup">
-    <a href="index.html">
-      <button class="dropbtn">
-        HOMEPAGE
-      </button>
-    </a>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">GENERAL INFORMATION</button>
-    <div class="dropup-content" id="gen-info">
-      <a href="#" id="park-description" class='clickable' data-category='parks'>PARK DESCRIPTION</a>
-      <a href="#" id="park-articles" class='clickable' data-category='articles'>PARK ARTICLES</a>
-      <a href="#" id="park-website">OFFICIAL PARK WEBSITE</a>
-    </div>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">PARK ALERTS</button>
-    <div class="dropup-content" id="activities">
-      <a href="#" id="park-alerts">PARK ALERTS</a>
-      <!-- <a href="#" id="park-Link#">Link 2</a>
-      <a href="#" id="park-Link#">Link 3</a> -->
-    </div>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">MAPS & DIRECTIONS</button>
-    <div class="dropup-content" id="maps">
-      <a href="#" id="park-directions">PARK DIRECTIONS</a>
-      <a href="#" id="park-gps-location">PARK MAP</a>
-    </div>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">VISITORS CENTERS</button>
-    <div class="dropup-content" id="accessibility">
-      <a href="#" id="park-visitors">VISITORS CENTERS</a>
-    </div>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">WEATHER</button>
-    <div class="dropup-content" id="weather">
-      <a href="#" id="current-weather">CURRENT WEATHER</a>
-      <a href="#" id="5-day-forecast">5 DAY FORECAST</a>
-    </div>
-  </div>
-  <div class="btn dropup">
-    <button class="dropbtn">EVENTS</button>
-    <div class="dropup-content" id="events">
-      <a href="#" id="park-events">EVENTS</a>
-    </div>
-  </div>
-</footer>
-
+    <!--Bootstrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
 </html>
